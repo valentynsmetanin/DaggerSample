@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">DaggerSample</string>
+
+    <string name="contributors">Contributors</string>
+
+    <string name="name">Name</string>
+    <string name="email">Email</string>
+    <string name="company">Company</string>
+    <string name="location">Location</string>
+
+    <!-- Transition names-->
+    <string name="iv_avatar">avatar</string>
+
+</resources>
