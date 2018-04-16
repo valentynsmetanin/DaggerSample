@@ -111,13 +111,13 @@ public class ContributorDetailsActivity extends MvpActivity<ContributorDetailsVi
     private void loadAvatar(String url) {
         GlideApp.with(this)
                 .load(url)
-                .apply(RequestOptions.circleCropTransform())
-                .into(ivAvatar);
+                .transform(new BlurTransformation(this))
+                .into(ivAvatarBackground);
 
         GlideApp.with(this)
                 .load(url)
-                .transform(new BlurTransformation(this))
-                .into(ivAvatarBackground);
+                .apply(RequestOptions.circleCropTransform())
+                .into(ivAvatar);
     }
 
     @Override
